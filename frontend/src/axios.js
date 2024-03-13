@@ -1,5 +1,5 @@
 
-export const customurl =`${window.location.origin}/api/`
+export const customurl =`https://blog-app-pink-five.vercel.app/api/`
 
 
 
