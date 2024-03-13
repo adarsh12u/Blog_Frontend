@@ -117,7 +117,7 @@ const navigate = useNavigate();
             </div>
             </div>
            <div className=" w-full">
-           <button className=" w-full rounded-lg text-white bg-black p-2" type="submit" gradientDuoTone={"purpleToBlue"}  outline>{loading ? 'submitting...' : "submit"}  </button>
+           <button className=" w-full rounded-lg text-white bg-black p-2" type="submit" gradientDuoTone={"purpleToBlue"}  outline>submit </button>
            {/* <Oauth/> */}
            </div>
            <div className={`flex w-full`  }>
