@@ -77,7 +77,11 @@ const query = useQueryClient()
 <h1 className=' text-gray-500 text-sm'>{comment.numberOfLikes} like</h1>
 
     </div>
+
+    {
+         user.isAdmin === true &&
 <h1 className=' text-red-700 text-sm font-medium cursor-pointer' onClick={()=>deleteComment({userId:user._id , commentId : comment._id  , postid : comment.postId, isAdmin : user.isAdmin})}>Delete comment </h1>
+    }
 </div>
 
     </div>
