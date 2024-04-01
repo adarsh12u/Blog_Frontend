@@ -11,8 +11,10 @@ import { ImCross } from "react-icons/im";
 import { Button, Spinner } from 'flowbite-react';
 import Commentcreate from '../Comments/Commentcreate';
 import ShowComment from '../Comments/ShowComment';
+import { useSelector } from 'react-redux';
 const PostSeen = () => {
   const {slug} = useParams();
+  const {user} = useSelector((user)=>state.user)
   const {data , isLoading} = useQuery({
        queryKey:['slug',slug || 'all'],
        queryFn:async ()=>{
@@ -93,7 +95,7 @@ const PostSeen = () => {
     </h1>
       <div className=' w-full md:w-[90%] border border-gray-500 rounded-md p-3  md:p-10'>
           
-           <Commentcreate userid = {data.posts[0].userId}  postid={data.posts[0]._id} />
+           <Commentcreate userid = {user._id}  postid={data.posts[0]._id} />
       </div>
       <div className='  w-full md:w-[90%]  rounded-md    '>
           <ShowComment postId={data.posts[0]._id} />
