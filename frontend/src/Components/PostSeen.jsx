@@ -14,6 +14,7 @@ import ShowComment from '../Comments/ShowComment';
 import { useSelector } from 'react-redux';
 const PostSeen = () => {
   const {slug} = useParams();
+
   const {user} = useSelector((state)=>state.user)
   const {data , isLoading} = useQuery({
        queryKey:['slug',slug || 'all'],
