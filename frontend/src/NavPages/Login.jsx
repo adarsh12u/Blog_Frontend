@@ -107,14 +107,7 @@ const navigate = useNavigate();
                   Remember me
                 </label>
               </div>
-              <div className="text-sm">
-              <a
-                href="#"
-                className="font-medium text-blue-400 hover:text-blue-700"
-              >
-                Forgot your password ?
-              </a>
-            </div>
+             
             </div>
            <div className=" w-full">
            <button className=" w-full rounded-lg text-white bg-black p-2" type="submit" gradientDuoTone={"purpleToBlue"}  outline>submit </button>
