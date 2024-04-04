@@ -96,8 +96,8 @@ const PostSeen = () => {
     </h1>
       <div className=' w-full md:w-[90%] border border-gray-500 rounded-md p-3  md:p-10'>
           
-           <Commentcreate userid = {user._id}  postid={data.posts[0]._id} />
-      </div>
+     { user &&      <Commentcreate userid = {user._id}  postid={data.posts[0]._id} />
+     } </div>
       <div className='  w-full md:w-[90%]  rounded-md    '>
           <ShowComment postId={data.posts[0]._id} />
       </div>
