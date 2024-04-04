@@ -22,7 +22,7 @@ const ShowComment = ({ postId }) => {
     return (
       <div>
         <h1 className="text-lg md:text-4xl">
-          you are not allow to see comment , firstly you have to login
+          you are not allow to see or comment in this post , firstly you have to login
         </h1>
       </div>
     );
