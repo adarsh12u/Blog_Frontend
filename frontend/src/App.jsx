@@ -15,7 +15,7 @@ const Login = React.lazy(() => import("./NavPages/Login"));
 const SignUp = React.lazy(() => import("./NavPages/SignUp"));
 const Contact = React.lazy(() => import("./pages/Contact"));
 const CreatePost = React.lazy(() => import("./Components/CreatePost"));
-const SearchPage = React.lazy(() => import("./Components/SearchPage"));
+import SearchPage from "./Components/SearchPage";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -80,17 +80,10 @@ const App = () => {
         },
         {
           path: "/search",
-          element: (
-            <Suspense
-              fallback={
-                <div className="flex justify-center items-center min-h-screen">
-                  <Spinner size={"xl"} />
-                </div>
-              }
-            >
+          element: 
               <SearchPage />
-            </Suspense>
-          ),
+            
+          
         },
         {
           path: "/update-post/:id",
