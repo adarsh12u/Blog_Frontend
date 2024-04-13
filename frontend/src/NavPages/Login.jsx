@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
-import {Link, useNavigate} from "react-router-dom" 
+import {Link, redirect, useNavigate} from "react-router-dom" 
 import axios from "axios";
 import {toast} from 'react-toastify'
 import { customurl } from "../axios";
@@ -24,7 +24,7 @@ const navigate = useNavigate();
      ).then((res)=>{
 
           dispatch(signsucess(res.data))
-          navigate("/about")
+           redirect("/");
           toast.success("login sucessfull")
           // window.location.reload(true)
      }).catch((err)=>{

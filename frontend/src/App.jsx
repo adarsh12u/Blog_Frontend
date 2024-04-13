@@ -80,7 +80,17 @@ const App = () => {
         },
         {
           path: "/search",
-          element: <SearchPage />,
+          element: (
+            <Suspense
+              fallback={
+                <div className="flex justify-center items-center min-h-screen">
+                  <Spinner size={"xl"} />
+                </div>
+              }
+            >
+              <SearchPage />
+            </Suspense>
+          ),
         },
         {
           path: "/update-post/:id",
