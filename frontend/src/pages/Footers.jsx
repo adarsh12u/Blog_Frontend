@@ -28,13 +28,7 @@ const Footers = () => {
                 <Footer.Link href="#">blog</Footer.Link>
               </Footer.LinkGroup>
             </div>
-            <div>
-              <Footer.Title title="Follow me" />
-              <Footer.LinkGroup col>
-                <Footer.Link href="https://github.com/adarsh12u">Github</Footer.Link>
-                <Footer.Link href="https://www.linkedin.com/in/adarsh-gurjar-6170b0249/">Linkedin</Footer.Link>
-              </Footer.LinkGroup>
-            </div>
+           
             <div>
               <Footer.Title title="Legal" />
               <Footer.LinkGroup col>
@@ -47,13 +41,7 @@ const Footers = () => {
         <Footer.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
           <Footer.Copyright href="#" by="All right reserved" year={2024} />
-          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Footer.Icon href="https://leetcode.com/Adarshgurjar123/" icon={SiLeetcode} />
-            <Footer.Icon href="https://github.com/adarsh12u" icon={FaGithub} />
-            
-            <Footer.Icon href="https://www.linkedin.com/in/adarsh-gurjar-6170b0249/" icon={FaLinkedin} />
-            <Footer.Icon href="https://adarsh-gurjar-portfolio.netlify.app/" icon={CgWebsite} />
-          </div>
+          
         </div>
       </div>
     </Footer>
